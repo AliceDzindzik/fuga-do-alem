@@ -1,0 +1,90 @@
+[gd_scene load_steps=10 format=3 uid="uid://bpkphu8qj137m"]
+
+[ext_resource type="Texture2D" uid="uid://d27q6u766gv1r" path="res://arquivos/img/fundo e chao/fundo1.png" id="1_3mfp3"]
+[ext_resource type="Texture2D" uid="uid://61k1n02fuw1w" path="res://arquivos/img/fundo e chao/fundo2.png" id="2_ubcnx"]
+[ext_resource type="Texture2D" uid="uid://cjmcl7xptslk" path="res://arquivos/img/fundo e chao/fundo3.png" id="3_hc3o8"]
+[ext_resource type="Texture2D" uid="uid://7fujkg6kartf" path="res://arquivos/img/fundo e chao/fundo4.png" id="4_qp0fx"]
+[ext_resource type="Texture2D" uid="uid://bn0bgt6t8nq3x" path="res://arquivos/img/fundo e chao/fundo5.png" id="5_rbjgt"]
+[ext_resource type="Texture2D" uid="uid://rx8u7w2xgke1" path="res://arquivos/img/fundo e chao/fundo6.png" id="6_rcke7"]
+[ext_resource type="Texture2D" uid="uid://i32lswfchnnp" path="res://arquivos/img/fundo e chao/fundo7.png" id="7_ctya2"]
+[ext_resource type="Texture2D" uid="uid://b5fur2u7eswt4" path="res://arquivos/img/fundo e chao/fundo8.png" id="8_4tycf"]
+[ext_resource type="Texture2D" uid="uid://w13xqme3gm02" path="res://arquivos/img/fundo e chao/fundo9.png" id="9_1nknt"]
+
+[node name="Fundo" type="ParallaxBackground"]
+
+[node name="fundo1" type="Sprite2D" parent="."]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("1_3mfp3")
+centered = false
+
+[node name="ParallaxFundo2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo2" type="Sprite2D" parent="ParallaxFundo2"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("2_ubcnx")
+centered = false
+
+[node name="ParallaxFundo3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo3" type="Sprite2D" parent="ParallaxFundo3"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("3_hc3o8")
+centered = false
+
+[node name="ParallaxFundo4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo4" type="Sprite2D" parent="ParallaxFundo4"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("4_qp0fx")
+centered = false
+
+[node name="ParallaxFundo5" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo5" type="Sprite2D" parent="ParallaxFundo5"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("5_rbjgt")
+centered = false
+
+[node name="ParallaxFundo6" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo6" type="Sprite2D" parent="ParallaxFundo6"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("6_rcke7")
+centered = false
+
+[node name="ParallaxFundo7" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo7" type="Sprite2D" parent="ParallaxFundo7"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("7_ctya2")
+centered = false
+
+[node name="ParallaxFundo8" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo8" type="Sprite2D" parent="ParallaxFundo8"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("8_4tycf")
+centered = false
+
+[node name="ParallaxFundo9" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="fundo9" type="Sprite2D" parent="ParallaxFundo9"]
+scale = Vector2(1.24138, 0.81715)
+texture = ExtResource("9_1nknt")
+centered = false

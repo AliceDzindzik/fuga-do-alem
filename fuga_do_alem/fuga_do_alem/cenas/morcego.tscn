@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://crugqy7j4jt4a"]
+
+[ext_resource type="Script" path="res://cenas/morcego.gd" id="1_sru60"]
+[ext_resource type="Texture2D" uid="uid://k12nhkom5b7a" path="res://arquivos/img/morcego sprite/Blue_Flying.png" id="2_1l2bt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffb76"]
+atlas = ExtResource("2_1l2bt")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7k5l"]
+atlas = ExtResource("2_1l2bt")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdkih"]
+atlas = ExtResource("2_1l2bt")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_io33w"]
+atlas = ExtResource("2_1l2bt")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bu2g"]
+atlas = ExtResource("2_1l2bt")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rirb"]
+atlas = ExtResource("2_1l2bt")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5lysr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffb76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7k5l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdkih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_io33w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bu2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rirb")
+}],
+"loop": true,
+"name": &"voando",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqt42"]
+size = Vector2(36, 32)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s8m3f"]
+radius = 38.0
+height = 94.0
+
+[node name="Morcego" type="Area2D"]
+script = ExtResource("1_sru60")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(14, 6)
+scale = Vector2(3.67578, 3.03125)
+sprite_frames = SubResource("SpriteFrames_5lysr")
+animation = &"voando"
+autoplay = "voando"
+
+[node name="CabecaCol" type="CollisionShape2D" parent="."]
+position = Vector2(-23, 9)
+shape = SubResource("RectangleShape2D_fqt42")
+
+[node name="AsaCol" type="CollisionShape2D" parent="."]
+position = Vector2(34, 0)
+shape = SubResource("CapsuleShape2D_s8m3f")

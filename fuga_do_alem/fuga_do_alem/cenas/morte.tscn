@@ -1,0 +1,146 @@
+[gd_scene load_steps=21 format=3 uid="uid://dkvglvjglvn8e"]
+
+[ext_resource type="Texture2D" uid="uid://dpapij0uh6j5l" path="res://arquivos/img/morte sprite/attacking.png" id="1_jvngq"]
+[ext_resource type="Script" path="res://cenas/morte.gd" id="2_8jvv8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0xey"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ouq6l"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ymu3"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jayqs"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fa6h"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvy4p"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jgi8o"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2noe7"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(100, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ks2t"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(200, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j17qn"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(300, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jbwsx"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(400, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8ou7"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(500, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mnydh"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(0, 200, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pd0j"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6x1r4"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70lcl"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_negvg"]
+atlas = ExtResource("1_jvngq")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gxp23"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0xey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ouq6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ymu3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jayqs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0fa6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvy4p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jgi8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2noe7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ks2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j17qn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jbwsx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8ou7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mnydh")
+}],
+"loop": true,
+"name": &"atacando",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pd0j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6x1r4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70lcl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_negvg")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 6.0
+}]
+
+[node name="Morte" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(147, 392)
+rotation = 0.0924802
+scale = Vector2(4.03, 3.94)
+sprite_frames = SubResource("SpriteFrames_gxp23")
+animation = &"parado"
+autoplay = "parado"
+script = ExtResource("2_8jvv8")

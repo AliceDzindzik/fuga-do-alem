@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ta0webu32dxh"]
+
+[ext_resource type="Texture2D" uid="uid://yt1xiqkbvoi" path="res://arquivos/img/obstaculos/tombstone.png" id="1_6362f"]
+
+[node name="Lapide" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1, 0)
+scale = Vector2(0.475308, 0.425373)
+texture = ExtResource("1_6362f")
+
+[node name="LapideCol" type="CollisionPolygon2D" parent="."]
+position = Vector2(26, -1)
+scale = Vector2(2.30945, 3)
+polygon = PackedVector2Array(-0.333333, -10.6667, 2.59802, -5, 5.62905, -0.666667, 6.49505, 14, -28.1452, 13.6667, -28.5782, -1, -27.2792, -1.33333, -24.6812, -9, -19.4852, -12.6667, -12.3333, -14)

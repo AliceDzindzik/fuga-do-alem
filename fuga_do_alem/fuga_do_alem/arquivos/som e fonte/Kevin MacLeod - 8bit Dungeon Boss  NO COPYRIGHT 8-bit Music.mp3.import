@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o034yqied8gh"
+path="res://.godot/imported/Kevin MacLeod - 8bit Dungeon Boss  NO COPYRIGHT 8-bit Music.mp3-5b1a56d90b6893983131b6af07915014.mp3str"
+
+[deps]
+
+source_file="res://arquivos/som e fonte/Kevin MacLeod - 8bit Dungeon Boss  NO COPYRIGHT 8-bit Music.mp3"
+dest_files=["res://.godot/imported/Kevin MacLeod - 8bit Dungeon Boss  NO COPYRIGHT 8-bit Music.mp3-5b1a56d90b6893983131b6af07915014.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

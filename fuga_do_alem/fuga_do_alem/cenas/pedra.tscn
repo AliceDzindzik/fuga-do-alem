@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c65cw8m63e11s"]
+
+[ext_resource type="Texture2D" uid="uid://ci7kmlp5wqgx8" path="res://arquivos/img/obstaculos/pedra.png" id="1_8t8sq"]
+
+[node name="Pedra" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4.08, 4.34783)
+texture = ExtResource("1_8t8sq")
+
+[node name="PedraCol" type="CollisionPolygon2D" parent="."]
+position = Vector2(2, -1.49999)
+scale = Vector2(3.125, 3.07065)
+polygon = PackedVector2Array(12.5, 8.6, 12.5, -3.3, 2.3, -11.5, -1.5, -11.5, -1.5, -10.5, -12.4, -0.5, -12.5, 7.2, -10.9, 11.5, 10.6, 11.5)

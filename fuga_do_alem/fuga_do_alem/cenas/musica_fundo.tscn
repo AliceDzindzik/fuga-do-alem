@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://4311oouhab42"]
+
+[ext_resource type="AudioStream" uid="uid://o034yqied8gh" path="res://arquivos/som e fonte/Kevin MacLeod - 8bit Dungeon Boss  NO COPYRIGHT 8-bit Music.mp3" id="1_obhx0"]
+
+[node name="musicaFundo" type="AudioStreamPlayer"]
+stream = ExtResource("1_obhx0")
+volume_db = -10.0
+parameters/looping = true
